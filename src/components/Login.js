@@ -36,13 +36,13 @@ const Login = () => {
   return (
     <>
       <div className="p-4 box">
-        <h2 className="mb-3">Firebase Auth Login</h2>
+        <h2 className="mb-3">TodoApp Login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Control
               type="email"
-              placeholder="Email address"
+              placeholder="Email"
               onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Group>
@@ -71,7 +71,7 @@ const Login = () => {
         </div>
       </div>
       <div className="p-4 box mt-3 text-center">
-        Don't have an account? <Link to="/signup">Sign up</Link>
+        Create an account? <Link to="/signup">Sign up</Link>
       </div>
     </>
   );
